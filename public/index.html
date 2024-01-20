@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<title>Мобильный Сайт</title>
+	<link rel="stylesheet" href="style.css">
+	<link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet"> </head>
+<body>
+	<div id="product">
+		<div class="header"> <a href="https://www.instagram.com/ваш_профиль/" target="_blank"><img src="watchesImg/insta.png" class="instagram-button" alt=""></a>
+			<div class="easyshop"><span>E</span>asyShop <img src="corzina.png" alt=""></div>
+			<div class="city">
+				<div class="bishkek">Бишкек</div> <img src="location.svg" alt=""> </div>
+		</div>
+		<div id="order-form-container" class="hidden"> <span class="close-btn" onclick="toggleOrderForm3()">×</span>
+			<h2>Оформление заказа:</h2>
+			<form id="order-form" onsubmit="return submitOrder()">
+				<div id="info-order">
+					<div class="info-for-flex"> <img src="" alt="" id="info-img">
+						<div class="info-flex">
+							<div class="info-x">×</div>
+							<div id="info-quantity"></div>
+						</div>
+					</div>
+					<div id="itogo-text">к оплате:</div> <span id="info-itogo">245</span> </div>
+				<div class="addres">
+					<div class="for-flex"> <label for="city">Город:</label> <input type="text" id="city" name="city" required> </div>
+					<div class="for-flex"> <label for="street">Улица:</label> <input type="text" id="street" name="street" required> </div>
+					<div class="for-flex"> <label for="house">Дом:</label> <input type="text" id="house" name="house" required> </div>
+					<div class="for-flex"> <label for="apartment">Квартира:</label> <input type="text" id="apartment" name="apartment" required> </div>
+					<div style="margin-top: 20px;"> <label for="phone">Тел:</label> <input type="tel" id="phone" name="phone" required placeholder="+996"> </div>
+				</div> <button type="submit" onclick="submitOrder(event)" class="oformit-zakaz">Потвердить заказ&nbsp;<img class="confirm-zakaz-img" src="check.png" alt="4444"></button> </form>
+		</div>
+		<div class="fake-header"></div>
+		<div class="main-tovar"> <img class="main-tovar__img" src="watchesImg/w1.png" alt="Товар">
+			<h3 class="main-tovar__name">PAGANI DESIGN PD1673</h3>
+			<p class="main-tovar__price"> <span id="price">8400 сом</span> </p>
+			<div class="shipping"><img src="shipping.png" alt=""><span>Бесплатная доставка при заказе более 2 шт.</span></div> <span class="for-center">
+      <span class="itogo-text">Итого:</span> <span id="itogo"></span> </span>
+			<div id="quantity-controls"> <button onclick="decrementQuantity()">-</button>
+				<div class="for-flex"> <span id="quantity">1</span>
+					<div class="shtuk">шт.</div>
+				</div> <button onclick="incrementQuantity()">+</button> </div>
+			<div class="buttons" id="buttons"> <button onclick="toggleOrderForm2()" class="button7">
+        <div class="for-flex">
+          <span>Заказать</span>
+          <img src="corzina-order.png" alt=""></div>
+        </button> </div>
+		</div>
+		<h3 class="drugietovaryh3">Другие товары:</h3>
+		<div class="spisok-tovarov" id="tovarContainer">
+			<div class="tovar"> <img class="tovar__img" src="watchesImg/w1.png" alt="dd">
+				<div class="tovar__name">PAGANI DESIGN PD1673</div>
+				<div class="tovar__price">9990 с.</div>
+			</div>
+			<div class="tovar"> <img class="tovar__img" src="watchesImg/w10.png" alt="dd">
+				<div class="tovar__name">GEDI, женс. серебристые</div>
+				<div class="tovar__price">3400 с.</div>
+			</div>
+			<div class="tovar"> <img class="tovar__img" src="watchesImg/w3.png" alt="dd">
+				<div class="tovar__name">SKmei из нерж. стали </div>
+				<div class="tovar__price">2190 с.</div>
+			</div>
+			<div class="tovar"> <img class="tovar__img" src="watchesImg/w4.png" alt="dd">
+				<div class="tovar__name">SKmei, из нерж. стали</div>
+				<div class="tovar__price">2190 с.</div>
+			</div>
+			<div class="tovar"> <img class="tovar__img" src="watchesImg/w5.png" alt="dd">
+				<div class="tovar__name">UTHAI BK108, женские простые</div>
+				<div class="tovar__price">1150 с.</div>
+			</div>
+			<div class="tovar"> <img class="tovar__img" src="watchesImg/w6.png" alt="dd">
+				<div class="tovar__name">Casio LTP-VOO7D, женские</div>
+				<div class="tovar__price">3500 с.</div>
+			</div>
+			<div class="tovar"> <img class="tovar__img" src="watchesImg/CUENA.png" alt="dd">
+				<div class="tovar__name">CUENA, кварцевые круглые</div>
+				<div class="tovar__price">1260 с.</div>
+			</div>
+			<div class="tovar"> <img class="tovar__img" src="watchesImg/w8.png" alt="dd">
+				<div class="tovar__name">Casio MQ-24 MQ-76-й серии</div>
+				<div class="tovar__price">3790 с.</div>
+			</div>
+			<div class="tovar"> <img class="tovar__img" src="watchesImg/w13-2.png" alt="dd">
+				<div class="tovar__name">EUROTOUR, с магнитным шариком</div>
+				<div class="tovar__price">7800 с.</div>
+			</div>
+			<div class="tovar"> <img class="tovar__img" src="watchesImg/w14.png" alt="dd">
+				<div class="tovar__name">EUROTOUR, черный магнитный </div>
+				<div class="tovar__price">6900 с.</div>
+			</div>
+		</div>
+		<footer>
+			<p class="contact-number">Контактный номер: +996 505 546 054</p>
+			<div class="about-us">
+				<h3>О нас</h3>
+				<p>EasyShop - молодой и динамично развивающийся интернет-магазин, предлагающий широкий ассортимент товаров по доступным ценам. Мы являемся бета-версией и стремимся создать удобное и надежное пространство для ваших онлайн-покупок.</p>
+				<p>Наша команда работает над постоянным улучшением сервиса и расширением ассортимента. Спасибо, что выбираете нас!</p>
+			</div>
+		</footer>
+	</div>
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+	<script src="app.js"></script>
+</body>
+
+</html>

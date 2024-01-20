@@ -1,0 +1,262 @@
+body {
+  box-sizing: border-box;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    overflow-x: hidden; 
+}
+.fake-header{
+  height: 70px;
+ width: 100%;
+ background-color: #f4f3f3;
+
+}
+.header {
+  z-index: 3;
+  display: flex;
+  align-items: center;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+  position: fixed;
+  height: 70px;
+  width: 100%;
+  margin-top: -1px;
+  padding: 6px 20px 6px 2px;
+  background-color: #f4f3f3;
+  justify-content: space-between;
+  
+}
+.instagram-button {
+  margin: auto 0 auto 0;
+  width: 70px;
+  height: 70px;
+  cursor: pointer;
+}
+
+.easyshop img{
+  width: 35px;
+  height: 35px;
+  margin:0 auto;
+  
+}
+.easyshop span{
+  color: #1f8d25;
+}
+.easyshop {
+  
+  height: 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+ padding-right: 1px;
+  font-size: 40px;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.bishkek {
+  font-size: 17px;
+  font-family: sans-serif;
+}
+.city{
+  margin-right: 17px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.city img{
+  width: 17px;
+  height: 17px;
+  margin-left: 5px;
+}
+.for-flex{
+  display: flex;
+}
+
+.buttons {
+  display: flex;
+  flex-direction: column;
+}
+#product{
+position: relative; 
+  
+
+}
+.for-center{
+  margin: 0 auto; 
+  display: flex;
+  justify-content: center;
+  width: 60%;
+  position: relative;
+  }
+
+ 
+
+.itogo-text{
+  color: #5c5c5c;
+  margin-right: auto;
+  
+}
+#itogo {
+  margin: 0 auto;
+  position: absolute;
+  justify-self: center;
+  font-size: 22px;
+  /* Исходный цвет текста (можете изменить по своему вкусу) */
+}
+#product, #order-form-container {
+  width: 100%;
+  margin: 0 auto;
+  background-color: #fffdfd;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  
+ 
+
+}
+
+#order-form-container {
+  z-index: 2;
+  position: fixed;
+  top: 50%;
+  left: -100%; /* Начальная позиция вне экрана */
+  transform: translate(-50%, -50%);
+  background-color: white;
+  padding: 0 20px 20px 20px;
+  transition: left 0.3s ease-in-out;
+  box-shadow: 0 0 7px rgba(0, 0, 0, 0.5);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 770px;
+}
+.close-btn {
+  width: 70px;
+  height: 70px;
+  margin-left: auto;
+  font-size: 70px;
+  cursor: pointer;
+  text-align: center;
+}
+
+#order-form{
+  display: flex; 
+  flex-direction: column;
+  align-items: center;
+  
+}
+
+#order-form-container h2 {
+  font-size: 30px;
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 40px;
+}
+
+.addres{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 78%;
+  align-items: flex-end;
+  white-space: nowrap;
+  margin-right: 60px;
+}
+#order-form input {
+  border: 1px solid;
+  margin-bottom: 28px;
+  margin-right: 0;
+  margin-left: 2px;
+  height: 35px;
+  width:240px;
+  font-size: 25px;
+}
+#order-form label{
+  font-size: 20px;
+  margin-left: 0;
+}
+#order-form button{
+  display: flex;
+  align-items: center;
+  
+  margin-top: 25px;
+  background-color: #0c5105;
+  width: 60%;
+  height: 50px;
+  font-weight: 700;
+    color: white;
+    text-decoration: none;
+    padding: .8em 1em calc(.8em + 3px);
+    border-radius: 3px;
+    background-color: #BB3921;
+
+    box-shadow: 0 -3px #922714 inset;
+    transition: 0.2s;
+    font-size: 20px;
+}
+.confirm-zakaz-img{
+  width: 18px;
+  height: 18px;
+  margin-bottom:5px;
+}
+#product img {
+  max-width: 100%;
+  margin: 0 auto;
+  height: auto;
+}
+
+#quantity-controls {
+  display: flex;
+  justify-content: space-between;
+  margin: 10px 0;
+}
+
+button {
+  background-color: #4caf50;
+  color: white;
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+}
+
+.order-button:hover {
+  background-color: #45a049;
+}
+
+.hidden {
+  display: none;
+}
+
+.drugietovaryh3 {
+  
+  margin-left: 130px;
+  
+}
+
+.instagram-button {
+  
+  width: 120px ;
+  height: 120px;
+  cursor: pointer;
+}
+
+
+footer {
+  background-color: #f5f5f5;
+  padding: 20px;
+  text-align: center;
+}
+
+/* Стили для контактного номера */
+.contact-number {
+  font-size: 1.2em;
+  color: #333;
+  margin-bottom: 10px; /* Добавлено для отступа между контактным номером и разделом "О нас" */
+}
+
+/* Стили для раздела "О нас" */
+.about-us {
+  margin-top: 10px; /* Уменьшено значение маржи для уменьшения отступа сверху */
+  font-size: 1em; /* Уменьшен размер шрифта для улучшения читаемости на мобильных устройствах */
+  color: #666;
+}

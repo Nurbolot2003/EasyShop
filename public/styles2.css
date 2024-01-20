@@ -1,0 +1,282 @@
+.main-tovar img{
+  width: 100%;
+  border-radius: 2px;
+}
+.main-tovar{
+  border: 1px solid #a0a0a0;
+   padding: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    margin-bottom: 10px;
+    margin-top: 0px;
+ max-width: 100%;
+ 
+
+}
+
+.main-tovar p{
+  font-family: "Ubuntu";
+  font-weight: 500;
+ margin-left: 18px;
+ margin-bottom: 10px;
+ margin-top: 4px;
+ font-size: 12px;
+ color: #BB3921;
+ font-size: 20px;
+
+}
+
+.main-tovar__name{
+margin: 10px 0 0 15px;
+}
+#price,.for-center{
+  font-family: "Ubuntu";
+  font-weight: 500;
+  color: #BB3921;
+  font-size: 20px;
+  
+  
+}
+
+#quantity-controls button{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 25px;
+  margin-left:55px ;
+  margin-right: 55px;
+  color: rgb(61, 190, 126);
+  background-color: #ffffff;
+  width: 40px;
+  height: 40px;
+  border-radius: 1.5px;
+  border: 2px solid rgb(61, 190, 126);
+  transition: .1s;
+
+}
+#quantity-controls button:active{
+  background-color:rgb(61, 190, 126) ;
+  color: #fff;
+  transition: .1s;
+}
+#quantity-controls{
+  margin-top: 25px;
+display: flex;
+align-items: center;
+font-size: 20px;
+}
+.shtuk{
+  margin-top: auto;
+  font-size: 13px;
+  margin-bottom: 1.4px;
+  margin-left: 2px;
+}
+.button7{
+ 
+  
+   margin-top: 0px;
+}
+
+
+
+
+
+
+.spisok-tovarov {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+    gap: 5px; /* Расстояние между товарами */
+ max-width: 100%;
+ padding: 4px;
+    
+  }
+  
+  .tovar {
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.5);
+
+
+    
+  }
+  .tovar img {
+    width: 100%;
+    height: auto;
+    border-radius: 2px;
+  
+  }
+  
+  .tovar__name {
+    font-weight: bold;
+    margin-left: 5px;
+    font-size: 12px;
+  }
+  
+  .tovar__price {
+    color: #BB3921;
+    flex: 2;
+    margin-left: 8px;
+    margin-bottom: 5px;
+    font-family: "Ubuntu", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 12px;
+  }
+
+.container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-left: -65px;
+  margin-top: -20px;
+  width: 130px;
+  height: 40px;
+  text-align: center;
+}
+
+#button11 {
+  outline: none;
+  height: 40px;
+  text-align: center;
+  width: 130px;
+  border-radius: 40px;
+  background: #fff;
+  border: 2px solid #1ECD97;
+  color: #1ECD97;
+  letter-spacing: 1px;
+  text-shadow: 0;
+  font-size: 12px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.25s ease;
+}
+#button11:hover {
+  color: white;
+  background: #1ECD97;
+}
+#button11:active {
+  letter-spacing: 2px;
+}
+#button11:after {
+  content: "SUBMIT";
+}
+
+.onclic {
+  width: 40px;
+  border-color: #bbbbbb;
+  border-width: 3px;
+  font-size: 0;
+  border-left-color: #1ECD97;
+  -webkit-animation: rotating 2s 0.25s linear infinite;
+          animation: rotating 2s 0.25s linear infinite;
+}
+.onclic:after {
+  content: "";
+}
+.onclic:hover {
+  color: #1ECD97;
+  background: white;
+}
+
+.validate {
+  font-size: 13px;
+  color: white;
+  background: #1ECD97;
+}
+.validate:after {
+  font-family: "FontAwesome";
+  content: "";
+}
+
+.button7 {
+    font-weight: 700;
+    color: white;
+    text-decoration: none;
+    padding: .8em 1em calc(.8em + 3px);
+    border-radius: 3px;
+    background-color: #BB3921;
+
+    box-shadow: 0 -3px #922714 inset;
+    transition: 0.2s;
+    font-size: 17px;
+    width: 90%;
+    margin: 18px auto 30px auto;
+    display: flex;
+    align-items: center;
+    justify-content:center;
+  
+  
+  } 
+  .button7 img{
+    width: 20px;
+    height: 20px;
+    
+    
+  }
+  .button7:hover { background: #a0301c; }
+  .button7:active {
+    background: #ae341e;
+    box-shadow: 0 3px #912f1e inset;
+  }
+
+  .shipping{
+    margin-top: 10px;
+    width: 20px;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    margin-left: 20px;
+    margin-bottom: 10px;
+   
+    
+  }
+  .shipping span{
+    margin-left: 5px;
+    white-space: nowrap;
+    font-size: 10px;
+    font-size: 12px;
+    color: rgb(0, 153, 102);
+    font-family: Inter, Roboto, "Open Sans", OpenSans, Helvetica, Arial, sans-serif;
+  }
+
+#info-order{
+  width:40%;
+  height: 100px;
+  margin: 0 auto 70px auto;
+  display: flex;
+  flex-direction: column;
+}
+.info-for-flex{
+  display: flex;
+  width: 100%;
+  background-color: #f9f9f9;
+}
+#info-img{
+  height: 80px;
+  width: 80px;
+  position: absolute;
+  margin-left: 0;
+}
+#itogo-text{
+  margin-top: auto;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 20px;
+}
+#info-itogo{
+  color: #BB3921;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 20px;
+}
+
+.info-flex{
+  
+  display: flex;
+  margin-left: auto;
+  margin-top: 25px;
+  width: 50px;
+  height: 60px;
+  text-align: center;
+  font-size: 25px;
+}
