@@ -1,0 +1,115 @@
+/* Дополнительные стили для десктопа */
+
+body {
+  font-size: 30px;
+}
+
+.fake-header {
+  height: 80px;
+}
+
+.header {
+  position: fixed;
+  
+  left: 50%;
+  transform: translate(-50%, 0);
+  width: 100%;
+  height: 40px;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+
+}
+.easyshop{
+  margin: 0 15%;
+}
+.instagram-button {
+  width: 60px;
+  height: 60px;
+}
+#product{
+  width: 768px ;
+}
+.easyshop img {
+  width: 30px;
+  height: 30px;
+}
+
+.easyshop {
+  height: 50px;
+  font-size: 50px;
+}
+
+.bishkek {
+  font-size: 20px;
+}
+
+.city img {
+  width: 20px;
+  height: 20px;
+}
+
+#product, #order-form-container {
+  
+  margin: 0 auto;
+}
+
+#order-form-container {
+  width: 40%;
+}
+
+.addres {
+  width: 50%;
+}
+
+#order-form input {
+  width: 100%;
+}
+
+#order-form button {
+  width: 30%;
+}
+
+.main-tovar {
+}
+
+#quantity-controls {
+ 
+}
+
+.tovar {
+  width: 100%;
+  overflow: hidden;
+}
+.tovar img {
+  
+  transition: transform 0.3s ease-in-out;
+}
+.tovar__name {
+  
+
+  z-index: 2; /* Устанавливаем более высокий z-index */
+}
+.tovar:hover img {
+  transform: scale(1.1); /* Увеличение на 10% при наведении */
+}
+.footer {
+  text-align: left;
+}
+.spisok-tovarov {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 10px; /* Расстояние между товарами */
+  max-width: 100%;
+  padding: 4px;
+  
+}
+
+.contact-number {
+  font-size: 1.2em;
+  margin-bottom: 20px;
+}
+
+.about-us {
+  margin-top: 20px;
+}
